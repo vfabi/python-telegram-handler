@@ -88,7 +88,7 @@ class TelegramHandler(logging.Handler):
             'chat_id': self.chat_id,
             'disable_web_page_preview': self.disable_web_page_preview,
             'disable_notification': self.disable_notification,
-            'reply_to_message_id' : self.reply_to_message_id
+            'reply_to_message_id' : self.reply_to_message_id,
         }
 
         if getattr(self.formatter, 'parse_mode', None):
